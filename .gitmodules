@@ -1,3 +1,3 @@
-[submodule "framework"]
+[submodule "administrator/components/com_alchemy/framework"]
 	path = administrator/components/com_alchemy/framework
 	url = https://raeldc@github.com/magicthemes/Alchemy-ThemeFramework.git
