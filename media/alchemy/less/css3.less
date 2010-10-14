@@ -1,21 +1,21 @@
 .css3_border_radius(@radius: 10px) {
-  -webkit-border-radius: @radius;
-  -moz-border-radius: @radius;
-  border-radius: @radius;
-  behavior: e(%("url(%s/core/production/framework/css3/PIE.txt.htc)", @setup_framework_path));
+	 -webkit-border-radius: @radius;
+	 -moz-border-radius: @radius;
+	 border-radius: @radius;
+	 behavior: url(../js/PIE.htc);
 }
 
 .css3_box_shadow(@x:10px, @y:10px, @blur:5px, @color: #ccc) {
-  -moz-box-shadow: @x @y @blur @color;
-  -webkit-box-shadow: @x @y @blur @color;
-  box-shadow: @x @y @blur @color;
-  behavior: e(%("url(%s/core/production/framework/css3/PIE.txt.htc)", @setup_framework_path));
+	 -moz-box-shadow: @x @y @blur @color;
+	 -webkit-box-shadow: @x @y @blur @color;
+	 box-shadow: @x @y @blur @color;
+	 behavior: url(../js/PIE.htc);
 }
 
 .css3_linear_gradient(@start_color: #ccc, @end_color: #eee, @start: center top, @degree: -90deg, @end: center bottom) {
-  background: -moz-linear-gradient(@start @degree, @start_color, @end_color); 
-  background: -webkit-gradient(linear, @start, @end, color-stop(0, @start_color), color-stop(1, @end_color));
-  -webkit-background-origin: padding-box;
-  -pie-background: linear-gradient(@degree, @start_color, @end_color);
-  behavior: e(%("url(%s/core/production/framework/css3/PIE.txt.htc)", @setup_framework_path));
+	 background: -moz-linear-gradient(@start @degree, @start_color, @end_color); 
+	 background: -webkit-gradient(linear, @start, @end, color-stop(0, @start_color), color-stop(1, @end_color));
+	 -webkit-background-origin: padding-box;
+	 -pie-background: linear-gradient(@degree, @start_color, @end_color);
+	 behavior: url(../js/PIE.htc);
 }
