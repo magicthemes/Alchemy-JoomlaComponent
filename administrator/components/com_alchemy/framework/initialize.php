@@ -1,11 +1,11 @@
 <?php
 /**
- * Alchemy Theme Framework Version 101001 for Joomla 1.5
+ * Alchemy Theme Framework
  *
  * Features:
  *      * LessCSS development mode
  *      * Full support for HTML5
- *      * Partial support for CSS3 through PIE
+ *      * IE 8 below Partial support for CSS3 through PIE
  *      * Very Simple Helpers(for now)
  *
  * This file Contains the basic bootstrap helpers for Alchemy - this shouldn't change much
@@ -35,7 +35,7 @@ class Alchemy
 	 * @return void
 	 * @author Israel D. Canasa
 	 */
-	public static function start($context = NULL, $version = '101003')
+	public static function start($context = NULL, $version = 'latest')
 	{
 		self::$_context = ($context) ? $context : stdclass;
 		
