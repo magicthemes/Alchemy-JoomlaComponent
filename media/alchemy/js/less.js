@@ -1305,6 +1305,14 @@ tree.functions = {
 		} else {
 			return new(tree.Dimension)((width.value / columns.value) * count.value, width.unit);	
 		}
+	},
+	get_variable: function(variable) {
+		console.log(tree);
+		if (typeof(less_variables) != 'undefined' && typeof(less_variables[variable.value]) != 'undefined') {
+			return new(tree.Quoted)('""', less_variables[variable.value]);
+		}
+
+		return new(tree.Quoted)('""', '');
 	}
 };
 
