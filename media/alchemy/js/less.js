@@ -1307,7 +1307,6 @@ tree.functions = {
 		}
 	},
 	get_variable: function(variable) {
-		console.log(tree);
 		if (typeof(less_variables) != 'undefined' && typeof(less_variables[variable.value]) != 'undefined') {
 			return new(tree.Quoted)('""', less_variables[variable.value]);
 		}
