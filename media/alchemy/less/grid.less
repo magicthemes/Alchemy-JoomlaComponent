@@ -135,7 +135,7 @@
  */
 
 .grid_append(@count) {
-	margin-right: fl_ColumnsWidth(@count, @grid_width, @grid_columns);
+	margin-right: grid_calculatewidth(@count, @grid_width, @grid_columns);
 }
 
 .grid_unappend() {
@@ -213,7 +213,7 @@
  */
 
 .grid_prepend(@count) {
-	margin-left: fl_ColumnsWidth(@count, @grid_width, @grid_columns);	
+	margin-left: grid_calculatewidth(@count, @grid_width, @grid_columns);	
 }
 
 .grid_unprepend() {
@@ -243,7 +243,7 @@
  */
 
 .grid_shift_left(@count) {
-  right: fl_ColumnsWidth(@count, @grid_width, @grid_columns);
+  right: grid_calculatewidth(@count, @grid_width, @grid_columns);
   position:relative;
 }
 
@@ -255,7 +255,7 @@
  */
 
 .grid_shift_right(@count) {
-  left: fl_ColumnsWidth(@count, @grid_width, @grid_columns);
+  left: grid_calculatewidth(@count, @grid_width, @grid_columns);
   position:relative;
 }
 
@@ -279,5 +279,5 @@
  */
 
 .grid_span(@count) {
-	width: fl_ColumnsWidth(@count, @grid_width, @grid_columns);	
+	width: grid_calculatewidth(@count, @grid_width, @grid_columns);	
 }

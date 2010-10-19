@@ -1299,7 +1299,7 @@ tree.functions = {
         str = str.replace(/%%/g, '%');
         return new(tree.Quoted)('"' + str + '"', str);
     },
-	fl_columnswidth: function(count, width, columns) {
+	grid_calculatewidth: function(count, width, columns) {
 		if(width.unit == '%' || width.unit == 'em') {
 			return new(tree.Dimension)(100 / columns.value * count.value, '%');	
 		} else {
@@ -1307,8 +1307,8 @@ tree.functions = {
 		}
 	},
 	get_variable: function(variable) {
-		if (typeof(less_variables) != 'undefined' && typeof(less_variables[variable.value]) != 'undefined') {
-			return new(tree.Quoted)('""', less_variables[variable.value]);
+		if (typeof(less.variables) != 'undefined' && typeof(less.variables[variable.value]) != 'undefined') {
+			return new(tree.Quoted)('""', less.variables[variable.value]);
 		}
 
 		return new(tree.Quoted)('""', '');
